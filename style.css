@@ -1663,3 +1663,186 @@ justify-content:center;
     transition: background 0.2s;
     margin-top: 4px;
 }
+/* ===== MOBILE FIX ===== */
+@media (max-width:768px){
+
+html,
+body{
+    width:100%;
+    overflow-x:hidden;
+}
+
+*{
+    max-width:100%;
+}
+
+.hero,
+.hero-inner,
+.trust,
+.trust-services,
+.services,
+.trusted,
+.growth,
+.logo,
+.contact,
+.footer{
+    width:100% !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    box-sizing:border-box;
+}
+
+.trust,
+.trust-services,
+.trusted,
+.logo{
+    grid-template-columns:repeat(2,1fr) !important;
+}
+
+.services{
+    grid-template-columns:1fr !important;
+}
+
+.growth{
+    grid-template-columns:1fr !important;
+}
+
+.trust1,
+.trust2,
+.trusts,
+.services1,
+.growths,
+.logos{
+    width:100% !important;
+    height:auto !important;
+}
+
+.image img{
+    width:100%;
+    height:auto;
+}
+
+.hero-text{
+    padding:15px;
+}
+
+.contact{
+    flex-direction:column;
+}
+
+.contact-heading,
+.contact-box{
+    width:100% !important;
+}
+
+}
+.contact{
+    width:95%;
+    max-width:1120px;
+    height:auto;
+    margin:40px auto;
+    padding:25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+@media(max-width:768px){
+
+.contact{
+    flex-direction:column;
+    text-align:center;
+    gap:20px;
+}
+
+.contact-heading,
+.contact-box{
+    width:100%;
+}
+
+.contact-box button{
+    width:100%;
+}
+}
+@media(max-width:768px){
+
+.footer{
+    width:95%;
+    margin:30px auto;
+    padding:35px 20px;
+    border-radius:20px;
+}
+
+.footer-logo{
+    width:100%;
+    height:auto;
+    text-align:center;
+}
+
+.footer-logo img{
+    width:180px;
+    height:auto;
+    display:block;
+    margin:0 auto 15px;
+}
+
+.footer-text{
+    text-align:center;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:25px;
+}
+
+.footer-box{
+    padding:0;
+    text-align:center;
+}
+
+.social-icons{
+    align-items:center;
+}
+}
+.button-first,
+.button-second{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+}
+
+@media (max-width:768px){
+
+.nav-buttons{
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.button-first,
+.button-second{
+    width:100%;
+}
+
+}
+@media (max-width:768px){
+
+.image{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin:0;
+    padding:0;
+}
+
+.image img{
+    width:90% !important;
+    max-width:320px;
+    height:auto !important;
+    margin:0 auto !important;
+    display:block;
+}
+
+}
